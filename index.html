@@ -38,6 +38,12 @@ rgba(241,221,194,.10);
 
 }
 
+html{
+
+scroll-behavior:smooth;
+
+}
+
 body{
 
 font-family:
@@ -65,9 +71,12 @@ line-height:1.8;
 
 width:100%;
 
+overflow:hidden;
+
 line-height:0;
 
-overflow:hidden;
+border-bottom:
+1px solid var(--line);
 
 }
 
@@ -127,6 +136,12 @@ line-height:1.3;
 
 margin-bottom:35px;
 
+max-width:800px;
+
+margin-left:auto;
+
+margin-right:auto;
+
 }
 
 .journey p{
@@ -146,7 +161,7 @@ line-height:2;
 
 display:inline-block;
 
-margin-top:20px;
+margin-top:25px;
 
 padding:
 15px 35px;
@@ -170,37 +185,106 @@ transition:.4s;
 transform:
 translateY(-4px);
 
+box-shadow:
+0 10px 30px
+rgba(224,164,93,.25);
+
 }
 
 /* footer */
 
 .footer{
 
-margin-top:80px;
+margin-top:90px;
 
 padding:
-70px 25px;
-
-text-align:center;
+80px 25px 60px;
 
 border-top:
 1px solid var(--line);
 
+background:
+linear-gradient(
+180deg,
+rgba(23,16,13,.15),
+rgba(38,24,21,.95)
+);
+
 }
 
-.footer h3{
+.footer-inner{
 
-margin-bottom:20px;
+max-width:850px;
 
-font-size:1.8rem;
+margin:auto;
+
+text-align:center;
 
 }
 
-.footer p{
+.footer-divider{
+
+width:110px;
+
+height:1px;
+
+margin:
+0 auto 35px;
+
+background:var(--gold);
+
+}
+
+.footer h2{
+
+font-size:
+clamp(
+1.8rem,
+4vw,
+2.6rem
+);
+
+margin-bottom:15px;
+
+}
+
+.footer-subtitle{
+
+font-style:italic;
+
+color:var(--sand);
+
+margin-bottom:35px;
+
+line-height:1.8;
+
+}
+
+.footer-quote{
+
+font-size:1.15rem;
+
+font-style:italic;
+
+color:var(--gold);
+
+max-width:700px;
+
+margin:
+0 auto 30px;
+
+line-height:1.9;
+
+}
+
+.footer-text{
 
 max-width:650px;
 
-margin:auto auto 30px;
+margin:
+0 auto 35px;
+
+line-height:2;
 
 color:var(--sand);
 
@@ -212,11 +296,13 @@ display:flex;
 
 justify-content:center;
 
+align-items:center;
+
 gap:30px;
 
 flex-wrap:wrap;
 
-margin-bottom:30px;
+margin-bottom:35px;
 
 }
 
@@ -238,13 +324,15 @@ color:var(--gold);
 
 .copy{
 
-opacity:.6;
-
 font-size:.85rem;
+
+opacity:.6;
 
 color:var(--muted);
 
 }
+
+/* mobile */
 
 @media(max-width:768px){
 
@@ -252,6 +340,19 @@ color:var(--muted);
 
 padding:
 70px 25px;
+
+}
+
+.footer{
+
+padding:
+65px 25px 50px;
+
+}
+
+.footer-nav{
+
+gap:20px;
 
 }
 
@@ -266,7 +367,7 @@ padding:
 
 <img
 src="images/sword-banner.png"
-alt="The Sword She Never Asked For"
+alt="The Sword She Never Asked For Banner"
 class="banner-img">
 
 </section>
@@ -316,15 +417,33 @@ Open Contents
 
 <footer class="footer">
 
-<h3>
+<div class="footer-inner">
+
+<div class="footer-divider"></div>
+
+<h2>
 
 The Sword She Never Asked For
 
-</h3>
+</h2>
 
-<p>
+<p class="footer-subtitle">
 
-Pain does not mean Jesus has left the story. Silence does not mean heaven has forgotten. Salvation survives every piercing.
+Seeing Salvation While Learning to Survive the Piercing
+
+</p>
+
+<p class="footer-quote">
+
+"The sword had done its work. And redemption had the final word."
+
+</p>
+
+<p class="footer-text">
+
+Pain does not mean Jesus has left the story.
+Silence does not mean heaven has forgotten.
+Salvation survives every piercing.
 
 </p>
 
@@ -353,6 +472,8 @@ About Bradley
 <div class="copy">
 
 © 2026 Bradley Hobbs
+
+</div>
 
 </div>
 
