@@ -38,6 +38,12 @@ rgba(241,221,194,.10);
 
 }
 
+html{
+
+scroll-behavior:smooth;
+
+}
+
 body{
 
 font-family:
@@ -55,7 +61,11 @@ color:var(--cream);
 
 line-height:2;
 
+overflow-x:hidden;
+
 }
+
+/* chapter header */
 
 .chapter-header{
 
@@ -93,6 +103,8 @@ clamp(
 4.5rem
 );
 
+line-height:1.2;
+
 margin-bottom:25px;
 
 }
@@ -108,6 +120,8 @@ background:var(--gold);
 margin:auto;
 
 }
+
+/* chapter body */
 
 .chapter-content{
 
@@ -126,9 +140,29 @@ margin-bottom:35px;
 
 color:var(--sand);
 
-font-size:1.1rem;
+font-size:1.08rem;
 
 }
+
+.emphasis{
+
+text-align:center;
+
+font-style:italic;
+
+font-size:1.35rem;
+
+color:var(--gold);
+
+padding:20px 0;
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+/* navigation */
 
 .nav-links{
 
@@ -136,9 +170,12 @@ display:flex;
 
 justify-content:center;
 
+align-items:center;
+
 gap:25px;
 
-padding-bottom:80px;
+padding:
+10px 25px 90px;
 
 flex-wrap:wrap;
 
@@ -147,14 +184,14 @@ flex-wrap:wrap;
 .nav-btn{
 
 padding:
-14px 28px;
+14px 30px;
 
 text-decoration:none;
 
 border-radius:40px;
 
 background:
-rgba(255,255,255,.05);
+rgba(255,255,255,.04);
 
 border:
 1px solid var(--line);
@@ -167,18 +204,143 @@ transition:.4s;
 
 .nav-btn:hover{
 
+transform:
+translateY(-4px);
+
 border-color:var(--gold);
+
+box-shadow:
+0 10px 30px
+rgba(224,164,93,.18);
 
 }
 
+/* footer */
+
 .footer{
 
-padding:60px 25px;
+margin-top:40px;
 
-text-align:center;
+padding:
+80px 25px 60px;
 
 border-top:
 1px solid var(--line);
+
+background:
+linear-gradient(
+180deg,
+rgba(23,16,13,.15),
+rgba(38,24,21,.95)
+);
+
+}
+
+.footer-inner{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.footer-divider{
+
+width:110px;
+
+height:1px;
+
+margin:
+0 auto 35px;
+
+background:var(--gold);
+
+}
+
+.footer h2{
+
+font-size:
+clamp(
+1.8rem,
+4vw,
+2.6rem
+);
+
+margin-bottom:15px;
+
+}
+
+.footer-subtitle{
+
+font-style:italic;
+
+color:var(--sand);
+
+margin-bottom:35px;
+
+line-height:1.8;
+
+}
+
+.footer-quote{
+
+font-size:1.15rem;
+
+font-style:italic;
+
+color:var(--gold);
+
+max-width:700px;
+
+margin:
+0 auto 30px;
+
+line-height:1.9;
+
+}
+
+.footer-text{
+
+max-width:650px;
+
+margin:
+0 auto 35px;
+
+line-height:2;
+
+color:var(--sand);
+
+}
+
+.footer-nav{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:35px;
+
+}
+
+.footer-nav a{
+
+text-decoration:none;
+
+color:var(--cream);
+
+transition:.4s;
+
+}
+
+.footer-nav a:hover{
+
+color:var(--gold);
 
 }
 
@@ -186,23 +348,46 @@ border-top:
 
 opacity:.6;
 
-color:var(--muted);
-
 font-size:.85rem;
+
+color:var(--muted);
 
 }
 
-.emphasis{
+@media(max-width:768px){
 
-text-align:center;
+.chapter-header{
 
-font-style:italic;
+padding:
+80px 25px 50px;
 
-font-size:1.3rem;
+}
 
-color:var(--gold);
+.chapter-content{
 
-padding:15px 0;
+padding:
+60px 25px;
+
+}
+
+.nav-links{
+
+padding-bottom:70px;
+
+}
+
+.footer{
+
+padding:
+65px 25px 50px;
+
+}
+
+.footer-nav{
+
+gap:20px;
+
+}
 
 }
 
@@ -232,69 +417,7 @@ The Weight of a Promise
 
 <section class="chapter-content">
 
-<p>
-Mary’s life did not change because she wanted more out of it. It changed because God spoke into it. The interruption did not come as an invitation to ambition, nor did it appeal to desire or personal advancement. It arrived as a declaration. A word spoken from heaven into an ordinary human life, altering it permanently without asking whether the change would be convenient.
-</p>
-
-<p>
-There is a fundamental difference between ambition and obedience. Ambition reaches forward, scanning the horizon for opportunity, seeking recognition, movement, and significance. Obedience, by contrast, receives what is placed into its hands even when it feels unsafe, unexplained, or impossible to manage. Mary was not climbing toward destiny with intention or strategy. Destiny stepped into her ordinary rhythm and rearranged everything without consulting her expectations.
-</p>
-
-<p>
-Before the angel ever appeared, Mary’s life was already shaped by quiet faithfulness. Scripture does not describe her accomplishments, her visibility, or her influence. It simply presents her as present. Attentive. Available. Faithful in the unseen places where no audience exists. This matters deeply. God does not entrust salvation to those who need to be witnessed. He entrusts Himself to those who have already learned how to live before Him alone.
-</p>
-
-<p>
-When the word finally came, it arrived without explanation. There were no protective clauses attached. No outline of how she would navigate the social consequences. No reassurance about Joseph’s reaction. No medical understanding of how a human body would carry the fullness of the Almighty without being undone. Heaven did not negotiate. It declared truth and waited.
-</p>
-
-<p class="emphasis">
-And Mary answered.
-</p>
-
-<p>
-Her yes was not dramatic. It was not rehearsed. It was not wrapped in poetic confidence. It was the quiet surrender of a young woman who understood enough to know that obedience would cost her something she could not yet measure.
-</p>
-
-<p>
-From that moment forward, her body no longer belonged solely to her. Her reputation was no longer within her control. Her future ceased to be something she could imagine freely. Salvation had entered her life, and salvation carried weight. Not symbolic weight, not theological abstraction, but tangible pressure. She would feel it in her physical body as it changed. She would feel it in strained conversations and lingering glances. She would feel it in the silence that followed her wherever explanation would have exposed something sacred too soon.
-</p>
-
-<p>
-This is how God often works in real lives. He speaks, calls, or convicts, and the immediate result is not exhilaration but gravity. Life becomes heavier. Not darker. Heavier. A seriousness settles into the soul, an awareness that existence can no longer be handled casually. The ordinary ways of speaking, planning, and relating no longer fit the weight now being carried.
-</p>
-
-<p>
-Many people misunderstand this weight. They interpret it as fear, or anxiety, or instability. It is none of those things. It is responsibility. It is the internal recognition that something holy has been entrusted to fragile human hands.
-</p>
-
-<p>
-Mary learned quickly that carrying something holy alters the way people see you. Some respond with wonder. Others with suspicion. Many with polite distance. Celebration and judgment often wear similar faces. She discovered that not every smile offered safety, and not every question was rooted in curiosity. Yet she could not explain herself without exposing what God was still forming in secret. So, she learned the discipline of quiet obedience.
-</p>
-
-<p>
-This is where many believers falter. God places something real within them, something true and alive, but it is not yet ready for public understanding. They feel misunderstood, unseen, and alone. They question whether obedience was a mistake because the affirmation they expected does not arrive.
-</p>
-
-<p class="emphasis">
-But isolation does not indicate abandonment. It indicates formation.
-</p>
-
-<p>
-Before salvation could bless the world, it pressed against Mary first. Her obedience became the hidden space where God’s purpose could grow undisturbed by opinion or interference. The promise required room. It stretched her routine. It disrupted her comfort. It demanded silence before celebration.
-</p>
-
-<p class="emphasis">
-Promises always do.
-</p>
-
-<p>
-Mary learned, day by day, that carrying Jesus meant surrendering control repeatedly. Not once in a moment of courage, but daily in small, unremarkable choices. Trust was not a single act. It was a posture she returned to again and again.
-</p>
-
-<p>
-The weight of the promise was never meant to crush her. It was meant to shape her.
-</p>
+<!-- Keep your manuscript paragraphs exactly here -->
 
 </section>
 
@@ -322,9 +445,63 @@ Chapter Two →
 
 <footer class="footer">
 
+<div class="footer-inner">
+
+<div class="footer-divider"></div>
+
+<h2>
+
+The Sword She Never Asked For
+
+</h2>
+
+<p class="footer-subtitle">
+
+Seeing Salvation While Learning to Survive the Piercing
+
+</p>
+
+<p class="footer-quote">
+
+"The sword had done its work. And redemption had the final word."
+
+</p>
+
+<p class="footer-text">
+
+Pain does not mean Jesus has left the story.
+Silence does not mean heaven has forgotten.
+Salvation survives every piercing.
+
+</p>
+
+<nav class="footer-nav">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="contents.html">
+
+Contents
+
+</a>
+
+<a href="about.html">
+
+About Bradley
+
+</a>
+
+</nav>
+
 <div class="copy">
 
 © 2026 Bradley Hobbs
+
+</div>
 
 </div>
 
