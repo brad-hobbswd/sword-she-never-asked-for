@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Chapter Six | Resurrection Does Not Undo Memory
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#17100d;
+--bg-alt:#261815;
+--bg-soft:#3a261f;
+
+--gold:#e0a45d;
+
+--cream:#f1ddc2;
+
+--sand:#d7b28f;
+
+--muted:#9a7b67;
+
+--line:
+rgba(241,221,194,.10);
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:
+Georgia,serif;
+
+background:
+linear-gradient(
+180deg,
+#17100d,
+#261815,
+#3a261f
+);
+
+color:var(--cream);
+
+line-height:2;
+
+overflow-x:hidden;
+
+}
+
+.chapter-header{
+
+padding:
+100px 25px 70px;
+
+text-align:center;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.chapter-number{
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+font-size:.8rem;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.chapter-header h1{
+
+font-size:
+clamp(
+2.5rem,
+6vw,
+4.5rem
+);
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.chapter-divider{
+
+width:100px;
+
+height:1px;
+
+background:var(--gold);
+
+margin:auto;
+
+}
+
+.chapter-content{
+
+max-width:850px;
+
+margin:auto;
+
+padding:
+80px 25px;
+
+}
+
+.chapter-content p{
+
+margin-bottom:35px;
+
+color:var(--sand);
+
+font-size:1.08rem;
+
+}
+
+.emphasis{
+
+text-align:center;
+
+font-style:italic;
+
+font-size:1.3rem;
+
+color:var(--gold);
+
+padding:15px 0;
+
+max-width:650px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+.nav-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+padding:
+10px 25px 90px;
+
+flex-wrap:wrap;
+
+}
+
+.nav-btn{
+
+padding:
+14px 30px;
+
+text-decoration:none;
+
+border-radius:40px;
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid var(--line);
+
+color:var(--cream);
+
+transition:.4s;
+
+}
+
+.nav-btn:hover{
+
+transform:
+translateY(-4px);
+
+border-color:var(--gold);
+
+box-shadow:
+0 10px 30px
+rgba(224,164,93,.18);
+
+}
+
+.footer{
+
+margin-top:40px;
+
+padding:
+80px 25px 60px;
+
+border-top:
+1px solid var(--line);
+
+background:
+linear-gradient(
+180deg,
+rgba(23,16,13,.15),
+rgba(38,24,21,.95)
+);
+
+}
+
+.footer-inner{
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.footer-divider{
+
+width:110px;
+
+height:1px;
+
+margin:
+0 auto 35px;
+
+background:var(--gold);
+
+}
+
+.footer h2{
+
+font-size:
+clamp(
+1.8rem,
+4vw,
+2.6rem
+);
+
+margin-bottom:15px;
+
+}
+
+.footer-subtitle{
+
+font-style:italic;
+
+color:var(--sand);
+
+margin-bottom:35px;
+
+line-height:1.8;
+
+}
+
+.footer-quote{
+
+font-size:1.15rem;
+
+font-style:italic;
+
+color:var(--gold);
+
+max-width:700px;
+
+margin:
+0 auto 30px;
+
+line-height:1.9;
+
+}
+
+.footer-text{
+
+max-width:650px;
+
+margin:
+0 auto 35px;
+
+line-height:2;
+
+color:var(--sand);
+
+}
+
+.footer-nav{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:35px;
+
+}
+
+.footer-nav a{
+
+text-decoration:none;
+
+color:var(--cream);
+
+transition:.4s;
+
+}
+
+.footer-nav a:hover{
+
+color:var(--gold);
+
+}
+
+.copy{
+
+opacity:.6;
+
+font-size:.85rem;
+
+color:var(--muted);
+
+}
+
+@media(max-width:768px){
+
+.chapter-header{
+
+padding:
+80px 25px 50px;
+
+}
+
+.chapter-content{
+
+padding:
+60px 25px;
+
+}
+
+.footer{
+
+padding:
+65px 25px 50px;
+
+}
+
+.footer-nav{
+
+gap:20px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="chapter-header">
+
+<div class="chapter-number">
+
+Chapter Six
+
+</div>
+
+<h1>
+
+Resurrection Does Not Undo Memory
+
+</h1>
+
+<div class="chapter-divider"></div>
+
+</section>
+
+
+<section class="chapter-content">
+
+<p>
+Resurrection changes everything, but it does not rewrite history. It does not pretend the cross never happened. It does not ask those who suffered to forget what obedience required of them.
+</p>
+
+<p>
+Mary saw Jesus alive again. She saw breath return where it had been stolen. She saw death overturned by the very life it tried to silence. She saw the promise fulfilled, not as theory, not as hope deferred, but as undeniable reality standing before her.
+</p>
+
+<p class="emphasis">
+Yet resurrection did not remove the memory of the cross.
+</p>
+
+<p>
+Victory did not erase the sound of nails. Glory did not dissolve the image of blood and wood and helpless watching. The empty tomb did not undo the hours she stood beneath the weight of irreversible loss. Resurrection did not restore innocence. It introduced meaning.
+</p>
+
+<p>
+God does not heal by denying pain ever existed. He heals by redeeming it. He does not rush the wounded past memory. He transforms memory so it no longer accuses faith. He allows history to remain, but changes what history testifies to.
+</p>
+
+<p>
+Mary’s faith did not return to what it was before the sword. It could not. Innocence cannot be reclaimed once obedience has been tested at that depth. Her faith emerged altered, widened, deepened. It had passed through death and returned carrying weight instead of naivety.
+</p>
+
+<p>
+Many believers experience resurrection moments like this. Healing arrives after grief, but it does not erase the season that preceded it. Peace settles in after endurance, but it carries awareness rather than surprise. Restoration comes, yet the person restored is no longer untouched.
+</p>
+
+<p class="emphasis">
+This is not failure. It is growth.
+</p>
+
+<p>
+God does not intend to return His people to untested belief. He forms faith that can withstand memory.
+</p>
+
+<p>
+Jesus Himself kept His scars after resurrection. The wounds were no longer bleeding, no longer painful, no longer limiting. Yet they remained visible. God did not erase them. He glorified them. They became evidence, not of defeat, but of love that endured obedience all the way through death.
+</p>
+
+<p>
+Scars are not proof of weak faith. They are proof of faith that remained when escape was possible. They testify that obedience was chosen when suffering was certain.
+</p>
+
+<p>
+Mary carried scars no one could see. The memory of standing at the cross did not vanish because resurrection followed. But those scars no longer accused God. They testified that salvation was worth the cost.
+</p>
+
+<p class="emphasis">
+What once pierced her no longer defined her pain. It defined her witness.
+</p>
+
+<p class="emphasis">
+The sword had done its work.
+</p>
+
+<p class="emphasis">
+And redemption had the final word.
+</p>
+
+</section>
+
+
+<div class="nav-links">
+
+<a
+href="chapter5.html"
+class="nav-btn">
+
+← Chapter Five
+
+</a>
+
+<a
+href="chapter7.html"
+class="nav-btn">
+
+Chapter Seven →
+
+</a>
+
+</div>
+
+
+<footer class="footer">
+
+<div class="footer-inner">
+
+<div class="footer-divider"></div>
+
+<h2>
+
+The Sword She Never Asked For
+
+</h2>
+
+<p class="footer-subtitle">
+
+Seeing Salvation While Learning to Survive the Piercing
+
+</p>
+
+<p class="footer-quote">
+
+"The sword had done its work. And redemption had the final word."
+
+</p>
+
+<p class="footer-text">
+
+Pain does not mean Jesus has left the story.
+Silence does not mean heaven has forgotten.
+Salvation survives every piercing.
+
+</p>
+
+<nav class="footer-nav">
+
+<a href="index.html">Home</a>
+
+<a href="contents.html">Contents</a>
+
+<a href="about.html">About Bradley</a>
+
+</nav>
+
+<div class="copy">
+
+© 2026 Bradley Hobbs
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
