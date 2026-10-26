@@ -1,49 +1,32 @@
-# The Sword She Never Asked For
+# The Sword She Never Asked For | Bradley Hobbs
 
-### Seeing Salvation While Learning to Survive the Piercing
+A Christian narrative exploring pain, spiritual struggle, family wounds, and the burden a woman may carry without having chosen it.
 
-A faith centered digital book experience by Bradley Hobbs.
+## Live Website
+https://brad-hobbswd.github.io/sword-she-never-asked-for/
 
-Live Site:
+## Overview
+A Christian narrative exploring pain, spiritual struggle, family wounds, and the burden a woman may carry without having chosen it.
 
-https://brad-hobbswd.github.io/sword-she-never-asked-for
+## Pages in This Repository
+- `about.html`
+- `chapter1.html`
+- `chapter2.html`
+- `chapter3.html`
+- `chapter4.html`
+- `chapter5.html`
+- `chapter6.html`
+- `chapter7.html`
+- `contents.html`
 
----
+## Technology
+Static website published through GitHub Pages using the HTML pages and included support assets.
 
-## About
+## Copyright and Permissions
+Copyright © 2026 Bradley Hobbs. All rights reserved.
 
-*The Sword She Never Asked For* follows Mary through promise, waiting, silence, suffering, resurrection, and peace. Through the words of Simeon and the unfolding journey of obedience, this project explores what happens when salvation enters ordinary life and carries a cost.
+Original writing, chapter text, teaching materials, website copy, graphics, layout, and source code are protected by copyright. Obtain prior written permission before reproducing, republishing, redistributing, modifying, or commercially using original work, except where applicable law permits otherwise. Third-party materials remain subject to their owners' rights and terms.
 
-This story examines:
-
-• Promise and responsibility  
-• Faith during silence  
-• The cost of obedience  
-• Suffering and redemption  
-• Peace through alignment  
-• The revelation of Jesus
-
----
-
-## Site Structure
-
-```text
-index.html
-contents.html
-
-chapter1.html
-chapter2.html
-chapter3.html
-chapter4.html
-chapter5.html
-chapter6.html
-chapter7.html
-
-about.html
-404.html
-
-images/
-footer.html
-robots.txt
-sitemap.xml
-README.md
+## Search Engine Files
+- [Sitemap](sitemap.xml)
+- [robots.txt](robots.txt)
